@@ -9,7 +9,6 @@ import {
   ListItemButton,
   ListItemText,
   Box,
-  Paper,
   ListSubheader,
   Divider,
 } from '@mui/material';
@@ -39,146 +38,144 @@ const Home = () => {
             {t('next-template')}
           </MuiLink>
         </Typography>
-        <Paper variant='elevation' elevation={2}>
-          <Box padding='2rem'>
-            <Typography variant='h6' paragraph align='center'>
-              {t('use')}
-            </Typography>
-            <Typography variant='subtitle1' align='center'>
-              {t('disclaimer')}
-            </Typography>
-            <List component='nav'>
-              <ListSubheader>{t('core')}</ListSubheader>
-              <Divider />
-              <ListItem disablePadding>
-                <ListItemButton component='a' href='https://nextjs.org/'>
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Next.js
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListSubheader>{t('design')}</ListSubheader>
-              <Divider />
-              <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  href='https://next.material-ui.com/'
-                >
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Material UI
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton component='a' href='https://storybook.js.org/'>
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Storybook
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListSubheader>{t('testing')}</ListSubheader>
-              <Divider />
-              <ListItem disablePadding>
-                <ListItemButton component='a' href='https://jestjs.io/'>
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Jest
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  href='https://testing-library.com/docs/react-testing-library/intro'
-                >
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        React Testing Library
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton component='a' href='https://mswjs.io/'>
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Mock Service Worker
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton component='a' href='https://www.cypress.io/'>
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Cypress
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListSubheader>{t('http')}</ListSubheader>
-              <Divider />
-              <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  href='https://github.com/axios/axios'
-                >
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        Axios
-                      </Typography>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  href='https://react-query.tanstack.com/'
-                >
-                  <ListItemText
-                    primary={
-                      <Typography variant='button' color='secondary'>
-                        React Query
-                      </Typography>
-                    }
-                    secondary={
-                      <Link href='/react-query' passHref>
-                        <MuiLink underline='hover'>
-                          <Typography variant='subtitle2' component='span'>
-                            {t('link-react-query')}
-                          </Typography>
-                        </MuiLink>
-                      </Link>
-                    }
-                  />
-                </ListItemButton>
-              </ListItem>
-            </List>
-          </Box>
-        </Paper>
+        <Box padding='2rem'>
+          <Typography variant='h6' paragraph align='center'>
+            {t('use')}
+          </Typography>
+          <Typography variant='subtitle1' align='center'>
+            {t('disclaimer')}
+          </Typography>
+          <List component='nav'>
+            <ListSubheader>{t('core')}</ListSubheader>
+            <Divider />
+            <ListItem disablePadding>
+              <ListItemButton component='a' href='https://nextjs.org/'>
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Next.js
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListSubheader>{t('design')}</ListSubheader>
+            <Divider />
+            <ListItem disablePadding>
+              <ListItemButton
+                component='a'
+                href='https://next.material-ui.com/'
+              >
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Material UI
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton component='a' href='https://storybook.js.org/'>
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Storybook
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListSubheader>{t('testing')}</ListSubheader>
+            <Divider />
+            <ListItem disablePadding>
+              <ListItemButton component='a' href='https://jestjs.io/'>
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Jest
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton
+                component='a'
+                href='https://testing-library.com/docs/react-testing-library/intro'
+              >
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      React Testing Library
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton component='a' href='https://mswjs.io/'>
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Mock Service Worker
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton component='a' href='https://www.cypress.io/'>
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Cypress
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListSubheader>{t('http')}</ListSubheader>
+            <Divider />
+            <ListItem disablePadding>
+              <ListItemButton
+                component='a'
+                href='https://github.com/axios/axios'
+              >
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      Axios
+                    </Typography>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+              <ListItemButton
+                component='a'
+                href='https://react-query.tanstack.com/'
+              >
+                <ListItemText
+                  primary={
+                    <Typography variant='button' color='secondary'>
+                      React Query
+                    </Typography>
+                  }
+                  secondary={
+                    <Link href='/react-query' passHref>
+                      <MuiLink underline='hover'>
+                        <Typography variant='subtitle2' component='span'>
+                          {t('link-react-query')}
+                        </Typography>
+                      </MuiLink>
+                    </Link>
+                  }
+                />
+              </ListItemButton>
+            </ListItem>
+          </List>
+        </Box>
       </Box>
     </Container>
   );

@@ -10,18 +10,22 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
  */
 const defaultTheme = createTheme({
   typography: {
-    fontFamily: ['JetBrains Mono', 'monospace'].join(','),
+    fontFamily: ['Poppins', 'sans-serif'].join(','),
   },
   palette: {
     background: {
-      default: '#f4f4f4',
+      default: '#FFC998',
     },
     primary: {
-      main: '#1e81b0',
+      main: '#48A9A6',
     },
     secondary: {
-      main: '#e28743',
+      main: '#F76F8E',
       contrastText: '#ffff',
+    },
+    text: {
+      primary: '#FFFFFF',
+      secondary: '#2F2F2F',
     },
   },
 });
