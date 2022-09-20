@@ -28,6 +28,15 @@ const defaultTheme = createTheme({
       secondary: '#2F2F2F',
     },
   },
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        body1: {
+          fontWeight: 500,
+        },
+      },
+    },
+  },
 });
 
 const theme = responsiveFontSizes(defaultTheme);

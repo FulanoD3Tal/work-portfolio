@@ -1,19 +1,6 @@
 {
-  "home": {
-    "welcome-title": "Welcome to",
-    "next-template": "NextJS Template",
-    "use": "This template is made using the next technologies",
-    "disclaimer": "Feel free to swap or remove the pieces you don't need",
-    "core": "Core",
-    "design": "Design",
-    "testing": "Testing",
-    "http": "HTTP Request",
-    "link-react-query": "Visit an example page of the implementation",
-    "react-query-example": "React Query Example",
-    "return-link": "Go back",
-    "file": "Visit the file",
-    "file-middle": "of this page and",
-    "file-end": "to see how configure it",
-    "api-response": "API Response:"
-  }
+  "home": "Home",
+  "services": "Services",
+  "my-work": "My Work",
+  "contact-me": "Contact Me"
 }

@@ -1,19 +1,6 @@
 {
-  "home": {
-    "welcome-title": "Bienvenido a la",
-    "next-template": "plantilla de NextJS",
-    "use": "Esta plantilla esta construida sobre las siguientes tecnologías",
-    "disclaimer": "Se libre de cambiar o eliminar las piezas que no necesites",
-    "core": "Núcleo",
-    "design": "Diseño",
-    "testing": "Testing",
-    "http": "HTTP Request",
-    "link-react-query": "Visita la pagina de ejemplo para ver su implementación",
-    "react-query-example": "Ejemplo de React Query",
-    "return-link": "Regresar",
-    "file": "Visita el archivo",
-    "file-middle": "de esta página y",
-    "file-end": "para ver como se configura",
-    "api-response": "Respuesta de la API:"
-  }
+  "home": "Inicio",
+  "services": "Servicios",
+  "my-work": "Mi trabajo",
+  "contact-me": "Contácteme"
 }
