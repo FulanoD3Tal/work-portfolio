@@ -22,6 +22,7 @@ const defaultTheme = createTheme({
   palette: {
     background: {
       default: '#FFC998',
+      paper: '#FFC998',
     },
     primary: {
       main: '#48A9A6',
