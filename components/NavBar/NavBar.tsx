@@ -32,17 +32,17 @@ const NavList = ({ sx }: { sx?: ListProps['sx'] }) => {
           <ListItemText>{t('home')}</ListItemText>
         </ListItemButton>
       </Link>
-      <Link href='/#my-services' passHref>
+      <Link href='#my-services' passHref>
         <ListItemButton component='a'>
           <ListItemText>{t('services')}</ListItemText>
         </ListItemButton>
       </Link>
-      <Link href='/#my-work' passHref>
+      <Link href='#my-work' passHref>
         <ListItemButton component='a'>
           <ListItemText>{t('my-work')}</ListItemText>
         </ListItemButton>
       </Link>
-      <Link href='/#contact-me' passHref>
+      <Link href='#contact-me' passHref>
         <ListItemButton
           component='a'
           sx={{
