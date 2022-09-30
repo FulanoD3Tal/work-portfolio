@@ -10,18 +10,70 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
  */
 const defaultTheme = createTheme({
   typography: {
-    fontFamily: ['JetBrains Mono', 'monospace'].join(','),
+    fontFamily: [
+      'Poppins',
+      'sans-serif',
+      'Cabin Sketch',
+      'cursive',
+      'JetBrains Mono',
+      'monospace',
+    ].join(','),
   },
   palette: {
     background: {
-      default: '#f4f4f4',
+      default: '#FFC998',
+      paper: '#FFC998',
     },
     primary: {
-      main: '#1e81b0',
+      main: '#48A9A6',
+      contrastText: '#ffff',
     },
     secondary: {
-      main: '#e28743',
+      main: '#F76F8E',
       contrastText: '#ffff',
+    },
+    text: {
+      primary: '#FFFFFF',
+      secondary: '#545454',
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1600,
+      xl: 1820,
+    },
+  },
+  components: {
+    MuiTypography: {
+      styleOverrides: {
+        body1: {
+          fontWeight: 500,
+        },
+        h2: {
+          fontSize: '4.375rem',
+        },
+      },
+    },
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          fontWeight: 'bold',
+          borderRadius: '2rem',
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontWeight: 'bold',
+          borderRadius: '2rem',
+          paddingInline: 50,
+          paddingBlock: 16,
+        },
+      },
     },
   },
 });

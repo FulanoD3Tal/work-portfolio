@@ -5,7 +5,6 @@ module.exports = {
      * redirect to the one with the language of the
      * client
      */
-    localeDetection: false,
     defaultLocale: 'en',
     locales: ['en', 'es'],
     reloadOnPrerender: process.env.NODE_ENV === 'development',

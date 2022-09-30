@@ -27,6 +27,15 @@ export const parameters = {
     en: 'English',
     es: 'Español',
   },
+  backgrounds: {
+    default: 'lighter',
+    values: [
+      {
+        name: 'lighter',
+        value: theme.palette.background.default,
+      },
+    ],
+  },
 };
 
 export const decorators = [

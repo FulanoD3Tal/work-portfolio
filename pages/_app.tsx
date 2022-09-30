@@ -26,7 +26,7 @@ const MyApp = ({
   return (
     <CacheProvider value={cache}>
       <Head>
-        <title>NextJS Template</title>
+        <title>FulanoD3Tal</title>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
       </Head>
       <ThemeProvider theme={theme}>
