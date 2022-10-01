@@ -7,19 +7,7 @@ import { useTranslation } from 'next-i18next';
 import React from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Container from '@mui/material/Container';
-import { keyframes } from '@emotion/react';
-
-const typewriting = keyframes`
-  to{ 
-    left: 100%
-  }
-`;
-
-const blink = keyframes`
-  to {
-    background: transparent;
-  }
-`;
+import TypeWriting from '../TypeWriting';
 
 const Hero = () => {
   const { t } = useTranslation(['common']);
@@ -61,41 +49,14 @@ const Hero = () => {
               textAlign: desktop ? 'left' : 'center',
             }}
           >
-            {t('i-can-make-them')}{' '}
-            <Box
-              component='span'
+            {t('i-can-make-them')}
+            <TypeWriting
               sx={{
-                display: 'block',
-                width: 'max-content',
                 mx: desktop ? 0 : 'auto',
-                position: 'relative',
-                '&::before': {
-                  content: '""',
-                  position: 'absolute',
-                  backgroundColor: (theme) => theme.palette.background.default,
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  animation: `${typewriting} 1s steps(4) 1s forwards`,
-                },
-                '&:after': {
-                  content: '""',
-                  position: 'absolute',
-                  backgroundColor: (theme) => theme.palette.text.primary,
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  width: '.75rem',
-                  height: '100%',
-                  animation: `${typewriting} 1s steps(4) 1s forwards , ${blink} 1s infinite`,
-                },
               }}
-              color='text.primary'
             >
               {t('real')}
-            </Box>
+            </TypeWriting>
           </Typography>
         </Box>
         <Box>
