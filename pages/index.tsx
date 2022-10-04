@@ -15,7 +15,8 @@ const getStaticProps: GetStaticProps = async ({ locale }) => ({
 const Home = () => {
   const { t } = useTranslation(['common']);
 
-  const urlDeploy = process.env.NEXT_PUBLIC_VERCEL_URL;
+  // TODO: Move this to enviroment variables
+  const urlDeploy = 'fulanod3tal.com';
   return (
     <>
       <Head>
