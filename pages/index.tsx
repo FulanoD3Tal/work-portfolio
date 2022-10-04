@@ -14,6 +14,8 @@ const getStaticProps: GetStaticProps = async ({ locale }) => ({
 
 const Home = () => {
   const { t } = useTranslation(['common']);
+
+  const urlDeploy = process.env.NEXT_PUBLIC_VERCEL_URL;
   return (
     <>
       <Head>
@@ -24,13 +26,16 @@ const Home = () => {
         <meta property='og:url' content='https://fulanod3tal.com' />
         <meta property='og:title' content='FulanoD3Tal' />
         <meta property='og:description' content={t('page-description')} />
-        <meta property='og:image' content='./images/banner.png' />
+        <meta property='og:image' content={`${urlDeploy}/images/banner.png`} />
         {/* Twitter og image */}
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://fulanod3tal.com' />
         <meta property='twitter:title' content='FulanoD3Tal' />
         <meta property='twitter:description' content={t('page-description')} />
-        <meta property='twitter:image' content='./images/banner.png' />
+        <meta
+          property='twitter:image'
+          content={`${urlDeploy}/images/banner.png`}
+        />
       </Head>
       <NavBar />
       <Hero />
