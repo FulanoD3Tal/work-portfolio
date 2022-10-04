@@ -42,6 +42,7 @@ const Hero = () => {
           </Typography>
           <Typography
             variant='h1'
+            component='h2'
             color='text.primary'
             sx={{
               fontFamily: 'JetBrains Mono',
