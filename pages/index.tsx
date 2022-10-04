@@ -26,7 +26,10 @@ const Home = () => {
         <meta property='og:url' content='https://fulanod3tal.com' />
         <meta property='og:title' content='FulanoD3Tal' />
         <meta property='og:description' content={t('page-description')} />
-        <meta property='og:image' content={`${urlDeploy}/images/banner.png`} />
+        <meta
+          property='og:image'
+          content={`https://${urlDeploy}/images/banner.png`}
+        />
         {/* Twitter og image */}
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://fulanod3tal.com' />
@@ -34,7 +37,7 @@ const Home = () => {
         <meta property='twitter:description' content={t('page-description')} />
         <meta
           property='twitter:image'
-          content={`${urlDeploy}/images/banner.png`}
+          content={`https://${urlDeploy}/images/banner.png`}
         />
       </Head>
       <NavBar />
