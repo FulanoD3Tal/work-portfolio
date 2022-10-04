@@ -11,6 +11,7 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useState } from 'react';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import Typography from '@mui/material/Typography';
 
 const NavList = ({ sx }: { sx?: ListProps['sx'] }) => {
   const { t } = useTranslation(['common']);
@@ -61,6 +62,7 @@ const NavList = ({ sx }: { sx?: ListProps['sx'] }) => {
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation(['common']);
 
   const toggleDrawer = () => setOpen(!open);
   return (
@@ -71,6 +73,15 @@ const NavBar = () => {
     >
       <Container maxWidth='xl'>
         <Toolbar sx={{ display: 'flex' }}>
+          <Typography
+            component='h1'
+            aria-label={`FulanoD3Tal | ${t('you-have-the-ideas')}, ${t(
+              'i-can-make-them'
+            )} ${t('real')}`}
+            sx={{ fontWeight: 700, fontSize: '1.2rem' }}
+          >
+            FulanoD3Tal
+          </Typography>
           <NavList sx={{ display: { xs: 'none', md: 'flex' } }} />
           <IconButton
             onClick={toggleDrawer}
