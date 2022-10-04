@@ -19,6 +19,18 @@ const Home = () => {
       <Head>
         <meta name='description' content={t('page-description')} />
         <link rel='icon' href='/favicon.ico' />
+        {/* Facebook and media og image */}
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://fulanod3tal.com' />
+        <meta property='og:title' content='FulanoD3Tal' />
+        <meta property='og:description' content={t('page-description')} />
+        <meta property='og:image' content='/images/banner.png' />
+        {/* Twitter og image */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://fulanod3tal.com' />
+        <meta property='twitter:title' content='FulanoD3Tal' />
+        <meta property='twitter:description' content={t('page-description')} />
+        <meta property='twitter:image' content='/images/banner.png' />
       </Head>
       <NavBar />
       <Hero />
