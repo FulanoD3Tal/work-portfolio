@@ -2,16 +2,22 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
-import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
 import LinkedInIcon from '../SvgIcons/LinkedInIcon';
 import TwitterIcon from '../SvgIcons/TwitterIcon';
 import GithubIcon from '../SvgIcons/GithubIcon';
+import {
+  GITHUB_LINK,
+  GMAIL_LINK,
+  LINKEDIN_LINK,
+  TWITTER_LINK,
+} from '../../config/env';
 
 const ContactMe = () => {
   const { t } = useTranslation('common');
+
   return (
-    <Box component='section' sx={{ height: '90vh', py: 5 }}>
+    <Box id='contact-me' component='section' sx={{ height: '90vh', py: 5 }}>
       <Container
         sx={{
           display: 'flex',
@@ -48,27 +54,33 @@ const ContactMe = () => {
               my: 5,
             }}
           >
-            <Link href='/' passHref>
-              <IconButton sx={{ p: 2, borderRadius: '1rem' }} color='inherit'>
-                <LinkedInIcon sx={{ fontSize: 60 }} />
-              </IconButton>
+            <Link
+              href={LINKEDIN_LINK}
+              target='_blank'
+              sx={{ color: 'text.primary' }}
+            >
+              <LinkedInIcon sx={{ fontSize: 60 }} />
             </Link>
-            <Link href='/' passHref>
-              <IconButton sx={{ p: 2, borderRadius: '1rem' }} color='inherit'>
-                <TwitterIcon sx={{ fontSize: 60 }} />
-              </IconButton>
+            <Link
+              href={TWITTER_LINK}
+              target='_blank'
+              sx={{ color: 'text.primary' }}
+            >
+              <TwitterIcon sx={{ fontSize: 60 }} />
             </Link>
-            <Link href='/' passHref>
-              <IconButton sx={{ p: 2, borderRadius: '1rem' }} color='inherit'>
-                <GithubIcon sx={{ fontSize: 60 }} />
-              </IconButton>
+            <Link
+              href={GITHUB_LINK}
+              target='_blank'
+              sx={{ color: 'text.primary' }}
+            >
+              <GithubIcon sx={{ fontSize: 60 }} />
             </Link>
           </Box>
           <Typography
             variant='h6'
             sx={{ textAlign: 'center', color: 'text.primary' }}
           >
-            su.escala.es.biblica@gmail.com
+            {GMAIL_LINK}
           </Typography>
         </Box>
       </Container>
