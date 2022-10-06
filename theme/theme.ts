@@ -47,6 +47,13 @@ const defaultTheme = createTheme({
     },
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        html {
+          scroll-behavior: smooth;
+        }
+          `,
+    },
     MuiTypography: {
       styleOverrides: {
         body1: {
