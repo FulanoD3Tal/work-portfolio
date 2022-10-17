@@ -51,6 +51,8 @@ const defaultTheme = createTheme({
       styleOverrides: `
         html {
           scroll-behavior: smooth;
+          scroll-snap-type: y proximity;
+          overscroll-behavior-y: contain;
         }
           `,
     },

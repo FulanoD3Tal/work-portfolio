@@ -3,9 +3,11 @@ import React from 'react';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import Box from '@mui/material/Box';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import ContactMe from '../components/ContactMe/ContactMe';
+import Features from '../components/Features/Features';
 
 const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
@@ -43,8 +45,11 @@ const Home = () => {
         />
       </Head>
       <NavBar />
-      <Hero />
-      <ContactMe />
+      <Box component='main'>
+        <Hero />
+        <Features />
+        <ContactMe />
+      </Box>
     </>
   );
 };
